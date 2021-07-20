@@ -13,7 +13,7 @@ const App = () => {
   }, [])
  
   return (
-    <div>
+    <div style={{backgroundImage: "url(https://placekitten.com/1600/800)", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", height: "1080px"}}>
       {users.map(u => <h4 key={u._id}>userName : {u.userName}</h4>)}
     </div>
   )
