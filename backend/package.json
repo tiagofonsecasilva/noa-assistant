@@ -1,0 +1,31 @@
+{
+  "name": "noa-assistant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagofonsecasilva/noa-assistant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagofonsecasilva/noa-assistant/issues"
+  },
+  "homepage": "https://github.com/tiagofonsecasilva/noa-assistant#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.13.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
