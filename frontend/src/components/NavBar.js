@@ -1,17 +1,19 @@
 import React from 'react';
 import './style.css'
+import WeatherList from './Weather';
+import LoginButton from './Auth0/loginWithRedirect';
+import withAuth0 from './Auth0/withAuth0';
+import Posts from './Auth0/posts';
+import LogoutButton from './Auth0/logout';
+import Profile from './Auth0/user';
 
 class App extends React.Component {
   render() {
     return (
       <div className="navbar">
         <div className="overlap-group">
-          <div className="rectangle-5"></div>
           <div className="frame-6">
-            <div className="asdcfg-1 valign-text-middle sfprotext-bold-black-13px">ASDCFG</div>
-            <div className="asdcfg valign-text-middle sfprotext-bold-white-13px">ASDCFG</div>
-            <div className="asdcfg valign-text-middle sfprotext-bold-black-13px">ASDCFG</div>
-            <div className="asdcfg-2 valign-text-middle sfprotext-bold-black-13px">ASDCFG</div>
+            <WeatherList />
           </div>
         </div>
         <Group4
@@ -26,11 +28,11 @@ class App extends React.Component {
           notification="https://anima-uploads.s3.amazonaws.com/projects/60e43f41a72a001b79f76252/releases/60f6f843482f73d38c7e4780/img/notification@2x.svg"
           number="1"
         />
-        <Frame2
-          name="Patricia Ferreira"
-          manager="Manager"
-          ellipse1="https://anima-uploads.s3.amazonaws.com/projects/60e43f41a72a001b79f76252/releases/60f6e837e4b2be7041179c17/img/ellipse-1@2x.svg"
-        />
+        <withAuth0 />
+        <LoginButton />
+          <Posts />
+          <LogoutButton />
+          <Profile />
       </div>
     );
   }
