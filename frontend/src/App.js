@@ -19,6 +19,7 @@ const AppContainer = styled.div`
   position: fixed; /* or absolute */
   top: 40%;
   left: 10%;
+  background-color: red;
 `;
 
 const App = () => {
