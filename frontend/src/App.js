@@ -4,6 +4,9 @@ import NavBar from './components/NavBar'
 import WeatherList from './components/Weather';
 import GitPullRequest from './components/GitHub';
 import withAuthenticationRequired from './components/Auth0/withAuthenticationRequired';
+import { Container, Row, Col } from 'reactstrap';
+import LeftBar from './components/LeftBar';
+
 
 
 const App = () => {
@@ -19,10 +22,7 @@ const App = () => {
 
   return (
     <>
-    
-      <NavBar withAuthenticationRequired />
-      <></>
-      <GitPullRequest  withAuthenticationRequired/>
+      <LeftBar />
     </>
   )
 }

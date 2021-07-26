@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://anima-uploads.s3.amazonaws.com/projects/60fec71daddf8454546f4b3c/releases/60fec7293aae7856aca5abc7/img/background@1x.svg");
+  background-repeat: no-repeat;
 }
 
 code {
