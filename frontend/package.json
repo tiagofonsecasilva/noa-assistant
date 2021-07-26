@@ -3,21 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@auth0/auth0-react": "^1.6.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.21.1",
-    "bootstrap": "^5.0.2",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.6.1",
-    "react-dom": "^17.0.2",
-    "react-modal": "^3.14.3",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "reactstrap": "^8.9.0",
-    "trello": "^0.10.0",
-    "web-vitals": "^1.0.1"
+    "@auth0/auth0-react": "*",
+    "@react-hook/debounce": "^4.0.0",
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@testing-library/user-event": "*",
+    "axios": "*",
+    "bootstrap": "*",
+    "react": "*",
+    "react-bootstrap": "*",
+    "react-dom": "*",
+    "react-modal": "*",
+    "react-router-dom": "*",
+    "react-scripts": "*",
+    "reactstrap": "*",
+    "web-vitals": "^*"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,5 +43,12 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://127.0.0.1:5000"
+  "proxy": "http://127.0.0.1:5000",
+  "devDependencies": {
+    "framer-motion": "^4.1.17",
+    "react-click-outside-hook": "^1.1.1",
+    "react-icons": "^4.2.0",
+    "react-spinners": "^0.11.0",
+    "styled-components": "^5.3.0"
+  }
 }
