@@ -1,27 +1,54 @@
 {
-  "name": "noa-assistant",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-react": "*",
+    "@react-hook/debounce": "^4.0.0",
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@testing-library/user-event": "*",
+    "axios": "*",
+    "bootstrap": "*",
+    "react": "*",
+    "react-bootstrap": "*",
+    "react-dom": "*",
+    "react-modal": "*",
+    "react-router-dom": "*",
+    "react-scripts": "*",
+    "reactstrap": "*",
+    "web-vitals": "^*"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/server",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm start\" \"npm run client\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tiagofonsecasilva/noa-assistant.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tiagofonsecasilva/noa-assistant/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/tiagofonsecasilva/noa-assistant#readme",
+  "proxy": "http://127.0.0.1:5000",
   "devDependencies": {
-    "concurrently": "^6.2.0",
-    "nodemon": "^2.0.12"
+    "framer-motion": "^4.1.17",
+    "react-click-outside-hook": "^1.1.1",
+    "react-icons": "^4.2.0",
+    "react-spinners": "^0.11.0",
+    "styled-components": "^5.3.0"
   }
 }
