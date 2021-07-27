@@ -10,6 +10,9 @@ import MoonLoader from "react-spinners/MoonLoader";
 import { useDebounce } from "../hooks/debounceHook";
 import axios from "axios";
 import { TvShow } from "../tvShow";
+import { getAllCourses } from "../../api";
+const baseURL = `${process.env.REACT_APP_SERVER_HOSTNAME}/api`;
+
 
 const SearchBarContainer = styled(motion.div)`
   display: flex;
@@ -153,7 +156,8 @@ export function SearchBar(props) {
   }, [isClickedOutside]);
 
   const prepareSearchQuery = (query) => {
-    const url = `http://api.tvmaze.com/search/shows?q=${query}`;
+    // const url = `http://api.tvmaze.com/search/shows?q=${query}`;
+    const url = `${baseURL}/courses?q=${query}`;
 
     return encodeURI(url);
   };
@@ -175,6 +179,7 @@ export function SearchBar(props) {
       if (response.data && response.data.length === 0) setNoTvShows(true);
 
       setTvShows(response.data);
+      console.log(response.data)
     }
 
     setLoading(false);
@@ -194,7 +199,7 @@ export function SearchBar(props) {
           <IoSearch />
         </SearchIcon>
         <SearchInput
-          placeholder="Search for Series/Shows"
+          placeholder="Search Courses"
           onFocus={expandContainer}
           ref={inputRef}
           value={searchQuery}
@@ -235,13 +240,14 @@ export function SearchBar(props) {
           )}
           {!isLoading && !isEmpty && (
             <>
-              {tvShows.map(({ show }) => (
+              {tvShows.map((course ) => (
+                <>
                 <TvShow
-                  key={show.id}
-                  thumbanilSrc={show.image && show.image.medium}
-                  name={show.name}
-                  rating={show.rating && show.rating.average}
+                  key={course._id}
+                  name={course.name}
+                  slug={course.slug}
                 />
+                </>
               ))}
             </>
           )}

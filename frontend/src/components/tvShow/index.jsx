@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
+
 
 const TvShowContainer = styled.div`
   width: 100%;
@@ -30,7 +32,7 @@ const Name = styled.h3`
   display: flex;
 `;
 
-const Rating = styled.span`
+const Slug = styled.span`
   color: #a1a1a1;
   font-size: 16px;
   display: flex;
@@ -38,15 +40,15 @@ const Rating = styled.span`
 `;
 
 export function TvShow(props) {
-  const { thumbanilSrc, name, rating } = props;
+  const { thumbanilSrc, name, slug } = props;
 
   return (
     <TvShowContainer>
-      <Thumbnail>
-        <img src={thumbanilSrc} />
-      </Thumbnail>
+      {/* <Thumbnail>
+        <img src={courseType} />
+      </Thumbnail> */}
       <Name>{name}</Name>
-      <Rating>{rating || "N/A"}</Rating>
+      <Slug>{slug}</Slug>
     </TvShowContainer>
   );
 }

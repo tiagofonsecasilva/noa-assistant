@@ -1,30 +1,26 @@
 {
-  "name": "noa-assistant",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "project-management-server",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/server"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tiagofonsecasilva/noa-assistant.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tiagofonsecasilva/noa-assistant/issues"
-  },
-  "homepage": "https://github.com/tiagofonsecasilva/noa-assistant#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.26.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "express-async-handler": "^1.1.4",
-    "mongoose": "^5.13.3"
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "serve-favicon": "^2.5.0"
   },
-  "type": "module",
   "devDependencies": {
     "nodemon": "^2.0.12"
   }

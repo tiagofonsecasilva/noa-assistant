@@ -8,8 +8,9 @@ import { Container, Row, Col } from 'reactstrap';
 import LeftBar from './components/LeftBar';
 import { SearchBar } from './components/searchBar';
 import styled from "styled-components";
-
-
+import ListProjects from './components/Projects/ListProjects';
+import { Route, Switch } from "react-router-dom";
+import ListCourses from './components/Projects/ListCourses';
 
 const AppContainer = styled.div`
   width: 100%;
@@ -19,7 +20,7 @@ const AppContainer = styled.div`
   position: fixed; /* or absolute */
   top: 40%;
   left: 10%;
-  background-color: red;
+
 `;
 
 const App = () => {
@@ -35,6 +36,11 @@ const App = () => {
 
   return (
     <>
+    <Switch>
+    <Route exact path={["/projects"]} component={ListProjects} />
+    <Route exact path={["/courses"]} component={ListCourses} />
+
+    </Switch>
           <AppContainer>
       <SearchBar />
     </AppContainer>
