@@ -241,16 +241,16 @@ export function SearchBar(props) {
           )}
           {!isLoading && !isEmpty && (
             <>
-              {tvShows.map((course ) => (
+              {tvShows.map((course) => (
                 <>
-                <NavLink to={`/courses/${course._id}`}>
-{course.name}
-</NavLink>
-                <TvShow
-                  key={course._id}
-                  name={course.name}
-                  slug={course.slug}
-                />
+                  <NavLink to={`/courses/${course._id}`}>
+                    {course.name}
+                  </NavLink>
+                  <TvShow
+                    key={course._id}
+                    name={course.name}
+                    slug={course.slug}
+                  />
                 </>
               ))}
             </>
