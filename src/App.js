@@ -26,15 +26,6 @@ const AppContainer = styled.div`
 `;
 
 const App = () => {
-  const [users, setUsers] = useState([])
-  const getData = async () => {
-    const res = await axios.get('/api/users')
-    setUsers(res.data)
-  }
-
-  useEffect(() => {
-    getData()
-  }, [])
 
   return (
     <>
