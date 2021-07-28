@@ -13,6 +13,7 @@ import { Route, Switch } from "react-router-dom";
 import ListCourses from './components/Projects/ListCourses';
 import Profile from './components/Auth0/user';
 import Posts from './components/Auth0/posts';
+import CourseDetails from './components/Projects/CoursesDetails';
 
 const AppContainer = styled.div`
   width: 100%;
@@ -32,6 +33,7 @@ const App = () => {
       <Switch>
         <Route exact path={["/projects"]} component={ListProjects} />
         <Route exact path={["/courses"]} component={ListCourses} />
+        <Route exact path="/courses/:id" component={CourseDetails} />
         <Route exact path={["/profile"]} component={Profile} />
         <Route exact path={["/posts"]} component={Posts} />
 

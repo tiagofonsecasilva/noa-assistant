@@ -11,11 +11,14 @@ export default class ListCourses extends React.Component {
     const response = await getAllCourses();
     this.setState({
       courses: response.data,
-    });
+      
+    });      console.log(response.data.courseType)
   }
 
   render() {
+    
     return (
+
       <>
         <h2>List of Courses</h2>
         <ul>
