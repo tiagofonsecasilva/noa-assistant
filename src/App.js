@@ -11,6 +11,8 @@ import styled from "styled-components";
 import ListProjects from './components/Projects/ListProjects';
 import { Route, Switch } from "react-router-dom";
 import ListCourses from './components/Projects/ListCourses';
+import Profile from './components/Auth0/user';
+import Posts from './components/Auth0/posts';
 
 const AppContainer = styled.div`
   width: 100%;
@@ -36,14 +38,16 @@ const App = () => {
 
   return (
     <>
-    <Switch>
-    <Route exact path={["/projects"]} component={ListProjects} />
-    <Route exact path={["/courses"]} component={ListCourses} />
+      <Switch>
+        <Route exact path={["/projects"]} component={ListProjects} />
+        <Route exact path={["/courses"]} component={ListCourses} />
+        <Route exact path={["/profile"]} component={Profile} />
+        <Route exact path={["/posts"]} component={Posts} />
 
-    </Switch>
-          <AppContainer>
-      <SearchBar />
-    </AppContainer>
+      </Switch>
+      <AppContainer>
+        <SearchBar />
+      </AppContainer>
       <LeftBar />
 
     </>
