@@ -11,6 +11,8 @@ import Profile from './components/Auth0/user';
 import Posts from './components/Auth0/posts';
 import CourseDetails from './components/Projects/CoursesDetails';
 
+
+
 const AppContainer = styled.div`
   width: 100%;
   height: 100%;
