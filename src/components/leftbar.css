@@ -12,6 +12,7 @@
     width: 20px;
   }
   .notification {
+  
     align-self: center;
     letter-spacing: 0;
     line-height: 18px;
@@ -24,13 +25,15 @@
   .frame-18 {
     align-items: flex-start;
     background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60f9b55d871c93ece37620f1/releases/60f9b6a4450c82962c5db22b/img/rectangle-35@1x.svg);
-    background-size: 100% 100%;
+    background-size: 259px;
     display: flex;
     flex-direction: column;
-    min-height: 690px;
-    padding: 17px 29px;
+    padding: 40px 29px;
     width: 259px;
+    height: 690px;
   }
+
+
   .frame-16 {
     align-items: flex-start;
     display: flex;
@@ -104,6 +107,7 @@
     white-space: nowrap;
   }
   .notification-2 {
+    color:white;
     letter-spacing: 0;
     line-height: 18px;
     margin-bottom: 1.0px;
@@ -126,6 +130,7 @@
     width: 20px;
   }
   .messages {
+     color:white;
     align-self: center;
     letter-spacing: 0;
     line-height: 18px;
@@ -143,6 +148,7 @@
     min-width: 106px;
   }
   .to-do-list {
+     color:white;
     align-self: center;
     letter-spacing: 0;
     line-height: 18px;
@@ -160,6 +166,7 @@
     min-width: 78px;
   }
   .news {
+    color:white;
     align-self: center;
     letter-spacing: 0;
     line-height: 18px;
@@ -176,11 +183,12 @@
     min-height: 101px;
     width: 199px;
   }
-  .flex-row {
+ .flex-row {
+    padding: 55px;
     align-items: center;
     display: flex;
     min-width: 176px;
-  }
+}
   .ellipse-1 {
     height: 54px;
     width: 54px;
@@ -282,3 +290,11 @@
   * {
     box-sizing: border-box;
   }
+
+  .userProfile {
+    margin: -34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  

@@ -20,7 +20,7 @@ const SearchBarContainer = styled(motion.div)`
   width: 34em;
   height: 3.8em;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 20px;
   box-shadow: 0px 2px 12px 3px rgba(0, 0, 0, 0.14);
 `;
 
@@ -61,7 +61,7 @@ const SearchIcon = styled.span`
   color: #bebebe;
   font-size: 27px;
   margin-right: 10px;
-  margin-top: 6px;
+  margin-top: 0px;
   vertical-align: middle;
 `;
 
@@ -85,7 +85,7 @@ const LineSeperator = styled.span`
 `;
 
 const SearchContent = styled.div`
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-direction: column;
