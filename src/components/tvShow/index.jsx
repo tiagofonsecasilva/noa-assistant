@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 
 const TvShowContainer = styled.div`
@@ -12,17 +12,17 @@ const TvShowContainer = styled.div`
   align-items: center;
 `;
 
-const Thumbnail = styled.div`
-  width: auto;
-  height: 100%;
-  display: flex;
-  flex: 0.4;
+// const Thumbnail = styled.div`
+//   width: auto;
+//   height: 100%;
+//   display: flex;
+//   flex: 0.4;
 
-  img {
-    width: auto;
-    height: 100%;
-  }
-`;
+//   img {
+//     width: auto;
+//     height: 100%;
+//   }
+// `;
 
 const Name = styled.h3`
   font-size: 15px;

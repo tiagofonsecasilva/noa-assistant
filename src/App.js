@@ -1,8 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
-import NavBar from './components/NavBar'
-import WeatherList from './components/Weather';
-import GitPullRequest from './components/GitHub';
+import React from 'react'
 import withAuthenticationRequired from './components/Auth0/withAuthenticationRequired';
 import { Container, Row, Col } from 'reactstrap';
 import LeftBar from './components/LeftBar';
@@ -30,6 +26,7 @@ const App = () => {
 
   return (
     <>
+      <LeftBar />
       <Switch>
         <Route exact path={["/projects"]} component={ListProjects} />
         <Route exact path={["/courses"]} component={ListCourses} />
@@ -41,7 +38,7 @@ const App = () => {
       <AppContainer>
         <SearchBar />
       </AppContainer>
-      <LeftBar />
+
 
     </>
   )
