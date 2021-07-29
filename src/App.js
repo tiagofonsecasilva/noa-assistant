@@ -1,8 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
-import NavBar from './components/NavBar'
-import WeatherList from './components/Weather';
-import GitPullRequest from './components/GitHub';
+import React from 'react'
 import withAuthenticationRequired from './components/Auth0/withAuthenticationRequired';
 import { Container, Row, Col } from 'reactstrap';
 import LeftBar from './components/LeftBar';
@@ -18,6 +14,8 @@ import "./App.css";
 /* import animationData from './lotties/53322-loading';
 import "@lottiefiles/lottie-player"; */
 /* import TextsmsIcon from '@material-ui/icons/Textsms'; */
+
+
 
 const AppContainer = styled.div`
   width: 95%;
