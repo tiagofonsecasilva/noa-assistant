@@ -12,14 +12,6 @@ export const addProject = (project) => {
   return axios.post(`${baseURL}/projects`, project, { withCredentials: true });
 };
 
-export const getProject = (projectId) => {
-  return axios.get(`${baseURL}/projects/${projectId}`);
-};
-
-export const deleteProject = (projectId) => {
-  return axios.delete(`${baseURL}/projects/${projectId}`);
-};
-
 export const updateProject = (updatedProject) => {
   return axios.put(`${baseURL}/projects/${updatedProject.id}`, updatedProject);
 };
@@ -46,6 +38,16 @@ export const logout = () => {
   return axios.post(`${baseURL}/logout`, null, { withCredentials: true });
 };
 
+// Courses Routes
+
 export const getAllCourses = () => {
   return axios.get(`${baseURL}/courses`);
+};
+
+export const getCourse = (courseId) => {
+  return axios.get(`${baseURL}/courses/${courseId}`);
+};
+
+export const deleteCourse = (courseId) => {
+  return axios.delete(`${baseURL}/courses/${courseId}`);
 };

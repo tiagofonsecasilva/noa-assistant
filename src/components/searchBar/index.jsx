@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import { IoClose, IoSearch } from "react-icons/io5";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -240,13 +241,16 @@ export function SearchBar(props) {
           )}
           {!isLoading && !isEmpty && (
             <>
-              {tvShows.map((course ) => (
+              {tvShows.map((course) => (
                 <>
-                <TvShow
-                  key={course._id}
-                  name={course.name}
-                  slug={course.slug}
-                />
+                  <NavLink to={`/courses/${course._id}`}>
+                    {course.name}
+                  </NavLink>
+                  <TvShow
+                    key={course._id}
+                    name={course.name}
+                    slug={course.slug}
+                  />
                 </>
               ))}
             </>

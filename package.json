@@ -19,6 +19,7 @@
     "react-modal": "*",
     "react-router-dom": "*",
     "react-scripts": "*",
+    "react-toastify": "^7.0.4",
     "reactstrap": "*",
     "web-vitals": "^*"
   },
