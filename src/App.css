@@ -6,6 +6,28 @@
   
 }
 
+.MuiPaper-root.MuiDrawer-paper.MuiPaper-elevation16 {
+  background-color: #2795d3;
+}
+span.MuiButton-label {
+  color: white;
+}
+
+.makeStyles-root-6 {
+  color: white;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  color: white;
+}
+
+.MuiSvgIcon-root {
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

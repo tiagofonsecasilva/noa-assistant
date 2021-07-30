@@ -51,3 +51,8 @@ export const getCourse = (courseId) => {
 export const deleteCourse = (courseId) => {
   return axios.delete(`${baseURL}/courses/${courseId}`);
 };
+
+export const getAllNews = () => {
+  return axios.get(`${baseURL}/news}`);
+};
+

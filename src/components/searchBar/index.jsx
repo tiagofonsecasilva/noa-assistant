@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Course } from "../course";
 import { NavLink } from "react-router-dom";
 import { IoClose, IoSearch } from "react-icons/io5";
 import { useState } from "react";
@@ -10,7 +11,6 @@ import { useRef } from "react";
 import MoonLoader from "react-spinners/MoonLoader";
 import { useDebounce } from "../hooks/debounceHook";
 import axios from "axios";
-import { TvShow } from "../tvShow";
 import { getAllCourses } from "../../api";
 const baseURL = `${process.env.REACT_APP_SERVER_HOSTNAME}/api`;
 
@@ -127,14 +127,14 @@ export function SearchBar(props) {
   const inputRef = useRef();
   const [searchQuery, setSearchQuery] = useState("");
   const [isLoading, setLoading] = useState(false);
-  const [tvShows, setTvShows] = useState([]);
-  const [noTvShows, setNoTvShows] = useState(false);
+  const [Courses, setCourses] = useState([]);
+  const [noTvShows, setNoCourses] = useState(false);
 
-  const isEmpty = !tvShows || tvShows.length === 0;
+  const isEmpty = !Courses || Courses.length === 0;
 
   const changeHandler = (e) => {
     e.preventDefault();
-    if (e.target.value.trim() === "") setNoTvShows(false);
+    if (e.target.value.trim() === "") setNoCourses(false);
 
     setSearchQuery(e.target.value);
   };
@@ -147,8 +147,8 @@ export function SearchBar(props) {
     setExpanded(false);
     setSearchQuery("");
     setLoading(false);
-    setNoTvShows(false);
-    setTvShows([]);
+    setNoCourses(false);
+    setCourses([]);
     if (inputRef.current) inputRef.current.value = "";
   };
 
@@ -163,11 +163,11 @@ export function SearchBar(props) {
     return encodeURI(url);
   };
 
-  const searchTvShow = async () => {
+  const searchCourse = async () => {
     if (!searchQuery || searchQuery.trim() === "") return;
 
     setLoading(true);
-    setNoTvShows(false);
+    setNoCourses(false);
 
     const URL = prepareSearchQuery(searchQuery);
 
@@ -177,16 +177,16 @@ export function SearchBar(props) {
 
     if (response) {
       console.log("Response: ", response.data);
-      if (response.data && response.data.length === 0) setNoTvShows(true);
+      if (response.data && response.data.length === 0) setNoCourses(true);
 
-      setTvShows(response.data);
+      setCourses(response.data);
       console.log(response.data)
     }
 
     setLoading(false);
   };
 
-  useDebounce(searchQuery, 500, searchTvShow);
+  useDebounce(searchQuery, 500, searchCourse);
 
   return (
     <SearchBarContainer
@@ -241,12 +241,12 @@ export function SearchBar(props) {
           )}
           {!isLoading && !isEmpty && (
             <>
-              {tvShows.map((course) => (
+              {Courses.map((course) => (
                 <>
                   <NavLink to={`/courses/${course._id}`}>
                     {course.name}
                   </NavLink>
-                  <TvShow
+                  <Course
                     key={course._id}
                     name={course.name}
                     slug={course.slug}

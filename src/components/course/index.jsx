@@ -3,7 +3,7 @@ import styled from "styled-components";
 // import { NavLink } from 'react-router-dom';
 
 
-const TvShowContainer = styled.div`
+const CourseContainer = styled.div`
   width: 100%;
   min-height: 6em;
   display: flex;
@@ -39,16 +39,14 @@ const Slug = styled.span`
   flex: 0.2;
 `;
 
-export function TvShow(props) {
-  const { thumbanilSrc, name, slug } = props;
+export function Course(props) {
+  const { courseType, name, slug } = props;
 
   return (
-    <TvShowContainer>
-      {/* <Thumbnail>
-        <img src={courseType} />
-      </Thumbnail> */}
+    <CourseContainer>
+      <courseType>{courseType}</courseType>
       <Name>{name}</Name>
       <Slug>{slug}</Slug>
-    </TvShowContainer>
+    </CourseContainer>
   );
 }

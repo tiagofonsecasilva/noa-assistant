@@ -1,14 +1,22 @@
-import React from 'react';
+import React, {Component, useState} from 'react';
 import './leftbar.css';
 import Profile from './Auth0/user';
 import LoginButton from './Auth0/loginWithRedirect';
 import CurrentDate from './Date';
+import Container from '@material-ui/core/Container';
+import NavbarComponent from './NavbarComponent';
+import TodoListComponent from './tasks/TodoListComponent';
+import TaskContextProvider from '../tasks/contexts/TaskContext';
+import TemporaryDrawer from './tasks/Drawer';
 
-
-class LeftBar extends React.Component {
+class LeftBar extends Component {
+  
   render() {
+    
     return (
+      
       <div className="frame-18">
+
         <div className="frame-16">
           <div className="group-336">
             <div className="group-8-2">
@@ -40,7 +48,8 @@ class LeftBar extends React.Component {
               className="group-8-1"
               src="/todo.svg"
               alt=""/>
-            <div className="to-do-list manrope-normal-white-16px">To-do list</div>
+            <div className="to-do-list manrope-normal-white-16px"><TemporaryDrawer />
+</div>
           </div>
           <div className="group-338">
             <img

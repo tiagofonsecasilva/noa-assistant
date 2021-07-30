@@ -8,7 +8,6 @@ import Col from 'react-bootstrap/Col';
 import CardGroup from 'react-bootstrap/CardGroup';
 
 
-
 export default class ListCourses extends React.Component {
   state = {
     courses: [],
