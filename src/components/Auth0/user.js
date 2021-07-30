@@ -14,7 +14,7 @@ const Profile = () => {
       <>
       <div className="userProfile" style={{display: "flex", flexDirection: "column", alignItems: "center" }}>
           <img className="loggedin" style={{ borderRadius: "50%", width: "60px", margin: "16px" }}  src={user.picture} alt={user.name} />
-        <div style={{display: "flex", fontSize: "14px"}}>
+          <div className="uernameMargin" style={{display: "flex", fontSize: "14px", margin: "10px 0 10px 0"}}>
         <h2 className="username" style={{color: "white", fontSize: "14px"}}>{user.name}</h2></div>
         <div><p>{user.email}</p></div>
         <LogoutButton/>

@@ -171,7 +171,12 @@ export function SearchBar(props) {
 
     const URL = prepareSearchQuery(searchQuery);
 
-    const response = await axios.get(URL).catch((err) => {
+    const response = await axios.get(URL, {
+      params: {
+        _limit: 10
+      }
+    }).catch((err) => {
+    
       console.log("Error: ", err);
     });
 
