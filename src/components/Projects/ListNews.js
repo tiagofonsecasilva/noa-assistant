@@ -25,14 +25,14 @@ export default class ListNews extends Component {
 
       <>
         <Row style={{ display: "flex", flexDirection: "row", flexWrap: 'wrap', margin: '100px 0 0 200px', paddingTop: "127px" }}>
-          {this.state.news.map((obj) => {
+          {this.state.news.map((obj, index) => {
             return (
               <Card border="warning" style={{ width: '18rem' }}>
                 <Card.Body style={{ display: "flex", flexDirection: "row" }}>
                   <Card.Text
-                    key={obj.source._id}>
+                    key={index}>
                     <NavLink to={`/news/${obj._id}`}>
-                      {obj.name}
+                      {obj.articles.name}
                     </NavLink>
 
                   </Card.Text>

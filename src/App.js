@@ -11,6 +11,7 @@ import Posts from './components/Auth0/posts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import ListNews from './components/Projects/ListNews';
+import GitPullRequest from './components/backups/GitHub';
 
 
 
