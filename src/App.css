@@ -6,6 +6,21 @@
   
 }
 
+.makeStyles-root-6 {
+  color: white;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  color: white;
+}
+
+.MuiSvgIcon-root {
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

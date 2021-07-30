@@ -12,6 +12,7 @@
     "@testing-library/user-event": "*",
     "axios": "*",
     "bootstrap": "^5.0.2",
+    "firebase": "^8.8.1",
     "react": "*",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "*",
@@ -21,6 +22,8 @@
     "react-scripts": "*",
     "react-toastify": "^7.0.4",
     "reactstrap": "*",
+    "uuid": "^8.3.2",
+    "uuidv1": "^1.6.14",
     "web-vitals": "^*"
   },
   "scripts": {

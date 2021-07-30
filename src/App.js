@@ -1,6 +1,5 @@
 import React from 'react'
 import withAuthenticationRequired from './components/Auth0/withAuthenticationRequired';
-import { Container, Row, Col } from 'reactstrap';
 import LeftBar from './components/LeftBar';
 import { SearchBar } from './components/searchBar';
 import styled from "styled-components";
@@ -11,20 +10,17 @@ import Profile from './components/Auth0/user';
 import Posts from './components/Auth0/posts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-/* import animationData from './lotties/53322-loading';
-import "@lottiefiles/lottie-player"; */
-/* import TextsmsIcon from '@material-ui/icons/Textsms'; */
 
 
 
 const AppContainer = styled.div`
-  width: 95%;
+  ${'' /* width: 95%; */}
   height: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
   top: 15%;
-  left: 10%;
+  left: 35%;
 `;
 
 const App = () => {
@@ -33,6 +29,7 @@ const App = () => {
     <div className="theApp">
     
         <LeftBar />
+
         <Switch>
           <Route exact path={["/projects"]} component={ListProjects} />
           <Route exact path={["/courses"]} component={ListCourses} />
