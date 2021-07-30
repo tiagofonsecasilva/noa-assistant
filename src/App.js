@@ -10,6 +10,7 @@ import Profile from './components/Auth0/user';
 import Posts from './components/Auth0/posts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import ListNews from './components/Projects/ListNews';
 
 
 
@@ -29,7 +30,7 @@ const App = () => {
     <div className="theApp">
     
         <LeftBar />
-
+        <ListNews />
         <Switch>
           <Route exact path={["/projects"]} component={ListProjects} />
           <Route exact path={["/courses"]} component={ListCourses} />
