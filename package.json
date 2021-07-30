@@ -17,10 +17,11 @@
     "react-dom": "*",
     "react-lottie": "^1.2.3",
     "react-modal": "*",
+    "react-multi-carousel": "^2.6.3",
     "react-router-dom": "*",
     "react-scripts": "*",
     "react-toastify": "^7.0.4",
-    "reactstrap": "*",
+    "reactstrap": "^8.9.0",
     "web-vitals": "^*"
   },
   "scripts": {

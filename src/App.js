@@ -11,6 +11,7 @@ import Profile from './components/Auth0/user';
 import Posts from './components/Auth0/posts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+
 /* import animationData from './lotties/53322-loading';
 import "@lottiefiles/lottie-player"; */
 /* import TextsmsIcon from '@material-ui/icons/Textsms'; */
@@ -38,8 +39,10 @@ const App = () => {
           <Route exact path={["/courses"]} component={ListCourses} />
           <Route exact path={["/profile"]} component={Profile} />
           <Route exact path={["/posts"]} component={Posts} />
+      
 
         </Switch>
+      
         <AppContainer>
           <SearchBar />
         </AppContainer>
