@@ -20,27 +20,21 @@ export default class ListNews extends Component {
   }
 
   render() {
-
+    
     return (
 
       <>
-        <Row style={{ display: "flex", flexDirection: "row", flexWrap: 'wrap', margin: '100px 0 0 200px', paddingTop: "127px" }}>
-          {this.state.news.map((obj, index) => {
+        
+      
+       
+          {this.state.news.map((news) => {
             return (
-              <Card border="warning" style={{ width: '18rem' }}>
-                <Card.Body style={{ display: "flex", flexDirection: "row" }}>
-                  <Card.Text
-                    key={index}>
-                    <NavLink to={`/news/${obj._id}`}>
-                      {obj.articles.name}
-                    </NavLink>
-
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <>
+                <h1>News List</h1>
+                <p>{news.author}</p>
+                </>
             );
           })}
-        </Row>
       </>
     );
   }
