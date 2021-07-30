@@ -42,7 +42,7 @@ export default class ListCourses extends React.Component {
                     </Card.Text>
                   </Card.Body>
                 </Card>
-                <Card>
+               {/*  <Card>
                   <Card.Img variant="top" src="holder.js/100px160" />
                   <Card.Body>
 
@@ -64,7 +64,7 @@ export default class ListCourses extends React.Component {
                       </NavLink>
                     </Card.Text>
                   </Card.Body>
-                </Card>
+                </Card> */}
               </CardGroup>
 
             )
