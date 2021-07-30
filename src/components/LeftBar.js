@@ -7,9 +7,7 @@ import Container from '@material-ui/core/Container';
 import NavbarComponent from './NavbarComponent';
 import TodoListComponent from './tasks/TodoListComponent';
 import TaskContextProvider from '../tasks/contexts/TaskContext';
-import Drawer from './tasks/Drawer';
-
-
+import TemporaryDrawer from './tasks/Drawer';
 
 class LeftBar extends Component {
   
@@ -18,12 +16,7 @@ class LeftBar extends Component {
     return (
       
       <div className="frame-18">
-                  <Container maxWidth="lg">
-      <TaskContextProvider>
-        <NavbarComponent></NavbarComponent>
-        <TodoListComponent></TodoListComponent>
-      </TaskContextProvider>
-    </Container>
+
         <div className="frame-16">
           <div className="group-336">
             <div className="group-8-2">
@@ -55,15 +48,8 @@ class LeftBar extends Component {
               className="group-8-1"
               src="/todo.svg"
               alt=""/>
-              {['left', 'right', 'top', 'bottom'].map((anchor) => (
-  <React.Fragment key={anchor}>
-    <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-    <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-      {list(anchor)}
-    </Drawer>
-  </React.Fragment>
-))}
-            <div className="to-do-list manrope-normal-white-16px">To-do list</div>
+            <div className="to-do-list manrope-normal-white-16px"><TemporaryDrawer />
+</div>
           </div>
           <div className="group-338">
             <img

@@ -6,6 +6,13 @@
   
 }
 
+.MuiPaper-root.MuiDrawer-paper.MuiPaper-elevation16 {
+  background-color: #2795d3;
+}
+span.MuiButton-label {
+  color: white;
+}
+
 .makeStyles-root-6 {
   color: white;
 }
