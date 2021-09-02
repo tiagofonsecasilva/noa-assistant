@@ -18,8 +18,8 @@ Full Stack Project testing a clean Company Intranet that get info from AI IBM Wa
 ### Front-End
 
 * React
-* Hooks
-* Redux
+*   Hooks
+*   Redux
 * Bootstrap
 * Axios
 * Material-UI
