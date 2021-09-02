@@ -1,4 +1,4 @@
-# NOA - IA Assistant Intranet   
+# NOA - IA Assistant Company Intranet   
 
 Full Stack Project testing a clean Company Intranet that get info from AI IBM Watson API  
 
