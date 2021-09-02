@@ -29,3 +29,6 @@ https://github.com/tiagofonsecasilva/noa-assistant-server
 ### UX
 * Figma
 * Adobe XD
+
+
+Always support and advocate for equality 👬 and diversity 👳‍♂️ 👵 of all human beings in every context, and protect our animals 🐝 and the planet 🌎 🌿.
