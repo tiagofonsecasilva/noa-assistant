@@ -9,7 +9,7 @@ Full Stack Project testing a clean Company Intranet that get info from AI IBM Wa
 * HTML
 * CSS
 
-### BackEnd
+### Back-End
 https://github.com/tiagofonsecasilva/noa-assistant-server
 * Node.js
 * Express.js
