@@ -1,8 +1,13 @@
 # NOA - IA Assistant Company Intranet   
 
-Full Stack Project testing a clean Company Intranet that get info from AI IBM Watson API  
+Full Stack Project testing a clean Company Intranet that get info from AI IBM Watson API
 
-## BackEnd
+## Languages
+* JS
+* HTML
+* CSS
+
+### BackEnd
 
 * Node.js
 * Express.js
@@ -13,6 +18,9 @@ Full Stack Project testing a clean Company Intranet that get info from AI IBM Wa
 * React
 * Bootstrap
 * Axios
-* 
+* Material-UI
+* Styled-components
 
-
+### UX
+* Figma
+* Adobe XD
