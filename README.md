@@ -24,6 +24,7 @@ Full Stack Project testing a clean Company Intranet that get info from AI IBM Wa
 * Axios
 * Material-UI
 * Styled-components
+* auth0-react
 
 ### UX
 * Figma
