@@ -10,7 +10,7 @@ Full Stack Project testing a clean Company Intranet that get info from AI IBM Wa
 * CSS
 
 ### BackEnd
-
+https://github.com/tiagofonsecasilva/noa-assistant-server
 * Node.js
 * Express.js
 * IBM Watson API
