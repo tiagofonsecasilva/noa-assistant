@@ -1,6 +1,6 @@
 # NOA - IA Assistant Company Intranet
 
-https://gifted-feynman-a66a63.netlify.app/
+Deployed with Netlify - https://gifted-feynman-a66a63.netlify.app/
 
 Full Stack Project testing a clean Company Intranet that get info from AI IBM Watson API
 
